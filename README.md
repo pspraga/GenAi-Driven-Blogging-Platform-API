@@ -2,6 +2,11 @@
 Multi User Blogging
 # initial setup
 CHANGE database name user and password in .env file
+--if not .env create manualy 
+POSTGRES_DB=db name
+POSTGRES_USER=username
+POSTGRES_PASSWORD=password
+
 
 #Docker setup and run 
 Run Docker file using
@@ -9,6 +14,8 @@ Run Docker file using
 1.docker-compose build
 2.docker-compose down && docker-compose up --build
 3.init db using docker-compose up -d
+4. docker ps -a --to verifiy is the container running or exite with error
+5. docker logs <container-id> to check any error on configuration
 ---for create super user
 #.docker exec -it genai_web_1 bash
 #.python3 manage.py createsuperuser.
