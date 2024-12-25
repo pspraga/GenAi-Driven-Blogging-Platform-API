@@ -10,8 +10,8 @@ Run Docker file using
 2.docker-compose down && docker-compose up --build
 3.init db using docker-compose up -d
 ---for create super user
-docker exec -it genai_web_1 bash
-python3 manage.py createsuperuser.
+#.docker exec -it genai_web_1 bash
+#.python3 manage.py createsuperuser.
 
 ---docker run----
 
